@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'idroid';
+    src: url(/fontes/idroid.otf) format('opentype');
+    font-weight: normal
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --cor0: #c5ebd6; 
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android: 'idroid', sans-serif;
+}
+
+
+body {
+    font-family: var(--fonte-padrão);
+    background-color: rgb(232, 229, 194);
+    margin: 0px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgb(61, 218, 132), rgb(21, 76, 46));
+    color: white;
+    margin: 0px;
+    padding: 10px;
+    box-shadow: -1px 1px 8px 0px black;
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    margin: 16px auto 16px auto;
+    text-align: center;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+header > p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 16px auto;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+nav.menu > a {
+    text-decoration: none;
+    color: rgba(149, 202, 171, 0.815);
+    font-weight: bold;
+    margin: 0px 10px 0px 10px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.144);
+    text-align: center;
+}
+
+nav.menu > a:hover {
+    background-color: rgba(149, 202, 171, 0.61);
+    padding: 10px 10px 10px 10px;
+    margin: 0px;
+    color: rgb(21, 76, 46);
+    border-radius: 7%;
+}
+
+main {
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px 0px;
+    box-shadow: 0px 4px 6px 3px rgba(0, 0, 0, 0.253);
+    border-radius: 0px 0px 10px 10px;
+}
+
+article > h1 {
+    font-family: 'idroid';
+    color: rgb(6, 62, 31);
+    padding: 0px 10px;
+    font-size: 25px;
+}
+
+section#historia > article > h2 {
+    font-family: 'idroid';
+    color: rgb(6, 62, 31);
+    padding: 0px 10px;
+    font-size: 16px;
+    background-image: linear-gradient(to right, #88E6B8, white);
+}
+
+section#historia > article > p { 
+    text-indent: 30px;
+    padding: 0px 10px;
+}
+
+article#video {
+    max-width: auto;
+    background-color: rgb(6, 62, 31);
+    padding-left: auto;
+    padding-right: auto;   
+}
+
+aside#extra > h3 {
+    background-color: rgb(6, 62, 31);
+    color: white;
+    margin: 20px 20px 0px 20px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside#extra > div.texto-extra {
+    background-color: rgb(197, 235, 214);
+    margin: 0px 20px 0px 20px;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+ }
+
+p.fim {
+    text-indent: 30px;
+    padding: 10px;
+ }
+
+ footer {
+    background-color: rgb(6, 62, 31);
+    color: white;
+    margin: 0px;
+    padding: 0px 0px 1px 0px;
+    text-align: center;
+ }

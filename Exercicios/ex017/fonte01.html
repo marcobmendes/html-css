@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5em;
+            /*
+            Medidas Absolutas:
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas:
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            ------------------------------
+            remenda-se o uso do px e do em
+            */
+
+            /* Peso da fonte */
+            font-weight: normal;
+            /* lighter, normal, bold bolder
+            numerico ex: 100 até 900 */
+
+            font-style: normal;
+            /* normal, italic, oblique, initial e unset */
+
+            text-decoration: /*underline*/; 
+            /* O texto ficará sublinhado */
+        }
+
+        h1 {
+            /* Ao invez de usar:
+            font-style : normal;
+            font-weight : normal;
+            font-size : 1.5em;
+            font-family : 'Courier New', Courier, monospace;
+
+            ** Use a "shothand" font:
+            -> font-style -> font-weight -> font-size -> font-family
+            */
+            font: normal normal 1.5em 'Courier New', Courier, monospace;
+        }
+        h2{
+            font: italic 2em courier;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quae sit voluptatibus accusantium modi deserunt aliquid, dignissimos repellendus porro. Dolorem nihil pariatur ab, veniam ipsam nam reprehenderit expedita distinctio veritatis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus recusandae tenetur, reiciendis odio magni suscipit porro maxime fugit dolorem aperiam voluptatum, eaque nostrum reprehenderit laudantium consectetur natus, accusamus quos repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aspernatur doloribus officiis voluptas voluptate, laboriosam ipsa quo beatae sequi nesciunt earum mollitia nisi incidunt iste! Quidem perspiciatis laborum dicta doloremque!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos perferendis architecto quasi sapiente error tenetur consectetur atque sint repudiandae, quibusdam minima hic unde recusandae soluta, quidem, necessitatibus ducimus ipsa aut!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deleniti iure, quibusdam aliquid dolor soluta tempore id autem sunt accusamus quis nesciunt eaque, vitae quidem, ipsa quod illo! Labore, excepturi?</p>
+</body>
+</html>
