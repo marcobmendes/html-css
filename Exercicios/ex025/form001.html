@@ -12,7 +12,9 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php">
+    <!-- Por padrão o method vem como "get" usado para pedir dados não sensíveis e compartilhaveis com no maximo 3000bytes/letras -->
+    <!--já quando os dados perguntados sejam sensíveis, arquivos e com mais de 3000bytes/letras use o method="post" -->
+    <form action="cadastro.php" method="post">
     <!-- <form autocomplete="off"> para não usar dados salvos para completar o formulário -->
         <p><label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome"></p>
